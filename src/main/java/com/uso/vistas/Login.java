@@ -62,7 +62,7 @@ public class Login extends JPanel {
 
     lblTitle.putClientProperty(
         FlatClientProperties.STYLE, "" +
-            "font:bold +11");
+            "font:bold +10");
 
     lblDescription.putClientProperty(
         FlatClientProperties.STYLE, "" +

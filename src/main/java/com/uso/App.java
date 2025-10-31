@@ -28,7 +28,7 @@ public class App extends JFrame {
     FlatInterFont.install();
     FlatLaf.registerCustomDefaultsSource("themes");
 
-    UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.PLAIN, 21));
+    UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.PLAIN, 16));
     FlatMacDarkLaf.setup();
     // FlatMacLightLaf.setup();
 
