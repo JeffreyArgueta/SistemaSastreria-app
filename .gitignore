@@ -1,0 +1,18 @@
+# Maven
+/target/
+*.log
+
+# JDTLS
+.metadata/
+.classpath
+.project
+.settings/
+
+# IDEs
+*.iml
+.idea/
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
