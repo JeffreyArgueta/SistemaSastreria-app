@@ -17,6 +17,13 @@
       <version>3.6.2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-extras -->
+    <dependency>
+      <groupId>com.formdev</groupId>
+      <artifactId>flatlaf-extras</artifactId>
+      <version>3.6.2</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-intellij-themes -->
     <dependency>
       <groupId>com.formdev</groupId>
@@ -31,6 +38,13 @@
       <version>2.137</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-fonts-roboto-mono -->
+    <dependency>
+      <groupId>com.formdev</groupId>
+      <artifactId>flatlaf-fonts-roboto-mono</artifactId>
+      <version>3.000</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-fonts-jetbrains-mono -->
     <dependency>
       <groupId>com.formdev</groupId>
@@ -43,6 +57,13 @@
       <groupId>com.formdev</groupId>
       <artifactId>flatlaf-fonts-inter</artifactId>
       <version>4.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.miglayout/miglayout-swing -->
+    <dependency>
+      <groupId>com.miglayout</groupId>
+      <artifactId>miglayout-swing</artifactId>
+      <version>11.4.2</version>
     </dependency>
 
     <dependency>
@@ -72,5 +93,13 @@
         </configuration>
       </plugin>
     </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources/com</directory>
+        <includes>
+          <include>**/</include>
+        </includes>
+      </resource>
+    </resources>
   </build>
 </project>
