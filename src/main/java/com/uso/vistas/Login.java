@@ -22,13 +22,13 @@ public class Login extends JPanel {
     chRememberMe = new JCheckBox("Recuérdame");
     btnLogin = new JButton("Iniciar Sesión");
 
-    JPanel panel = new JPanel(new MigLayout("wrap,fillx,insets 35 45 30 45", "fill,250:280"));
+    JPanel panel = new JPanel(new MigLayout("wrap,fillx,insets 35 45 35 45", "fill,250:290"));
 
     panel.putClientProperty(
         FlatClientProperties.STYLE, "" +
             "arc:20;" +
-            "[light]background:darken(@background,3%);" +
-            "[dark]background:lighten(@background,3%)");
+            "[light]background:darken(@background,6%);" +
+            "[dark]background:lighten(@background,4%)");
 
     txtUsername.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Ingresa tu usuario o correo");
     txtPassword.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Ingresa tu contraseña");
@@ -62,7 +62,7 @@ public class Login extends JPanel {
 
     lblTitle.putClientProperty(
         FlatClientProperties.STYLE, "" +
-            "font:bold +10");
+            "font:bold +11");
 
     lblDescription.putClientProperty(
         FlatClientProperties.STYLE, "" +

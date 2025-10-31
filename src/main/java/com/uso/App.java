@@ -19,7 +19,7 @@ public class App extends JFrame {
     setIconImage(icono);
     setTitle("Sistema Sastrería - Login");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setSize(new Dimension(1200, 700));
+    setSize(new Dimension(1440, 900));
     setLocationRelativeTo(null);
     setContentPane(new Login());
   }
@@ -28,7 +28,7 @@ public class App extends JFrame {
     FlatInterFont.install();
     FlatLaf.registerCustomDefaultsSource("themes");
 
-    UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.PLAIN, 13));
+    UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.PLAIN, 21));
     FlatMacDarkLaf.setup();
     // FlatMacLightLaf.setup();
 
