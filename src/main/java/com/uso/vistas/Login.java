@@ -39,8 +39,12 @@ public class Login extends JPanel {
 
     btnLogin.putClientProperty(
         FlatClientProperties.STYLE, "" +
-            "[light]background:darken(@background,10%);" +
-            "[dark]background:lighten(@background,10%);" +
+            // "[light]background:darken(@background,10%);" +
+            // "[dark]background:lighten(@background,10%);" +
+            "[light]background:#8839EF;" +
+            "[dark]background:#CBA6F7;" +
+            "[light]foreground:#FFFFFF;" +
+            "[dark]foreground:#000000;" +
             "borderWidth:0;" +
             "focusWidth:0;" +
             "innerFocusWidth:0");
