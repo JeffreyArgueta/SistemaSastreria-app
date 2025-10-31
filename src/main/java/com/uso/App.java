@@ -4,6 +4,7 @@ import javax.swing.*;
 
 import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
+import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.uso.vistas.Login;
 
@@ -15,8 +16,8 @@ public class App extends JFrame {
   }
 
   private void init() {
-	setIconImage(icono);
-    setTitle("Login");
+    setIconImage(icono);
+    setTitle("Sistema Sastrería - Login");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(new Dimension(1200, 700));
     setLocationRelativeTo(null);
@@ -29,6 +30,7 @@ public class App extends JFrame {
 
     UIManager.put("defaultFont", new Font(FlatInterFont.FAMILY, Font.PLAIN, 13));
     FlatMacDarkLaf.setup();
+    // FlatMacLightLaf.setup();
 
     EventQueue.invokeLater(() -> new App().setVisible(true));
   }
