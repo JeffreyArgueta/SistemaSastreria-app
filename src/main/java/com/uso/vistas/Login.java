@@ -6,6 +6,7 @@ import java.util.Random;
 import javax.swing.*;
 
 import com.formdev.flatlaf.FlatClientProperties;
+import com.uso.gestor.FormManager;
 
 import net.miginfocom.swing.MigLayout;
 
@@ -155,8 +156,7 @@ public class Login extends JPanel {
   }
 
   private void btnRegisterActionPerfomed(java.awt.event.ActionEvent evt) {
-    System.out.println("Formulario de registro");
-    // TODO: sign-up form
+    FormManager.getInstance().showForm(new Register());
   }
 
   private JTextField txtUsername;

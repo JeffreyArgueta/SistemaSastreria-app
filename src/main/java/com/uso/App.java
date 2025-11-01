@@ -6,6 +6,7 @@ import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.fonts.inter.FlatInterFont;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import com.uso.gestor.FormManager;
 import com.uso.vistas.Login;
 
 import java.awt.*;
@@ -22,6 +23,7 @@ public class App extends JFrame {
     setSize(new Dimension(1440, 900));
     setLocationRelativeTo(null);
     setContentPane(new Login());
+    FormManager.getInstance().initApp(this);
   }
 
   public static void main(String[] args) {
