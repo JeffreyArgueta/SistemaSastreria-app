@@ -23,16 +23,15 @@ public class Login extends JPanel {
     chRememberMe = new JCheckBox("Recuérdame");
     btnLogin = new JButton("Iniciar Sesión");
 
-    JPanel panel = new JPanel(new MigLayout("wrap,fillx,insets 35 45 35 45", "fill,250:290"));
+    JPanel panel = new JPanel(new MigLayout("wrap,fillx,insets 35 45 35 45", "fill,250:280"));
 
     panel.putClientProperty(
         FlatClientProperties.STYLE, "" +
             "arc:20;" +
-            "[light]background:darken(@background,6%);" +
+            "[light]background:darken(@background,4%);" +
             "[dark]background:lighten(@background,4%)");
 
     txtUsername.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Ingresa tu usuario o correo");
-    txtPassword.putClientProperty(FlatClientProperties.PLACEHOLDER_TEXT, "Ingresa tu contraseña");
 
     txtPassword.putClientProperty(
         FlatClientProperties.STYLE, "" +
@@ -40,8 +39,8 @@ public class Login extends JPanel {
 
     btnLogin.putClientProperty(
         FlatClientProperties.STYLE, "" +
-            // "[light]background:darken(@background,10%);" +
-            // "[dark]background:lighten(@background,10%);" +
+        // "[light]background:darken(@background,10%);" +
+        // "[dark]background:lighten(@background,10%);" +
             "[light]background:#8839EF;" +
             "[dark]background:#CBA6F7;" +
             "[light]foreground:#FFFFFF;" +
@@ -72,7 +71,7 @@ public class Login extends JPanel {
 
     panel.add(lblTitle);
     panel.add(lblDescription);
-    panel.add(new JLabel("Usuario"), "gapy 8");
+    panel.add(new JLabel("Identificarse"), "gapy 8");
     panel.add(txtUsername);
     panel.add(new JLabel("Contraseña"), "gapy 8");
     panel.add(txtPassword);
@@ -90,6 +89,13 @@ public class Login extends JPanel {
         FlatClientProperties.STYLE, "" +
             "background:null");
 
+    JLabel lblNotAccount = new JLabel("¿No tienes una cuenta?");
+
+    lblNotAccount.putClientProperty(
+        FlatClientProperties.STYLE, "" +
+            "[light]foreground:lighten(@foreground,30%);" +
+            "[dark]foreground:darken(@foreground,30%)");
+
     btnRegister = new JButton("<html><a href=\"#\">Registrarse</a></html>");
 
     btnRegister.putClientProperty(
@@ -104,13 +110,6 @@ public class Login extends JPanel {
         btnRegisterActionPerfomed(evt);
       }
     });
-
-    JLabel lblNotAccount = new JLabel("¿No tienes una cuenta?");
-
-    lblNotAccount.putClientProperty(
-        FlatClientProperties.STYLE, "" +
-            "[light]foreground:lighten(@foreground,30%);" +
-            "[dark]foreground:darken(@foreground,30%)");
 
     panel.add(lblNotAccount);
     panel.add(btnRegister);

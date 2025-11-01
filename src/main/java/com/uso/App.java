@@ -18,7 +18,7 @@ public class App extends JFrame {
 
   private void init() {
     setIconImage(icono);
-    setTitle("Sistema Sastrería - Login");
+    setTitle("Sistema Sastrería");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(new Dimension(1440, 900));
     setLocationRelativeTo(null);
